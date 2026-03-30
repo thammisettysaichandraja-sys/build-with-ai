@@ -1,0 +1,5 @@
+{
+  "name": "Neon Synth Snake",
+  "description": "A dark neon-themed Snake game integrated with a synthwave music player.",
+  "requestFramePermissions": []
+}

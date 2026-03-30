@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-digital: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  @keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+  }
+  
+  --animate-glitch: glitch 0.3s cubic-bezier(.25,.46,.45,.94) both infinite;
+}
+
+.glitch-text {
+  text-shadow: 2px 0 #ff00ff, -2px 0 #00ffff;
+}
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-white;
+  }
+}
